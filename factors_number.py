@@ -1,10 +1,6 @@
 n = int(input('Enter a number : '))
-rev = 0
-nc = n
+print('Factors : 1 ', end='')
 
-while(n>0):
-    dig = n % 10
-    rev = rev*10 + dig
-    n = n // 10
-    
-print('Reversed Number : ', rev)
+for i in range(2, n*n):
+    if(n % i == 0):
+        print(i, end=' ')
